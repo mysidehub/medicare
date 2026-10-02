@@ -1,0 +1,2270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MediCare Hospital | Quality Healthcare</title>
+
+    <meta name="description"
+          content="MediCare Hospital - 24x7 Emergency, Doctors, Departments, Appointments, Lab Tests and Healthcare Services.">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+
+
+
+
+
+
+
+<!--
+     TOP BAR-->
+
+<div class="top-bar">
+
+    <div class="container top-bar-inner">
+
+        <div>
+            <span>
+                <i class="fa-solid fa-clock"></i>
+                24x7 Emergency Services
+            </span>
+
+            <span>
+                <i class="fa-solid fa-location-dot"></i>
+                New Delhi, India
+            </span>
+        </div>
+
+        <div>
+            <a href="tel:+919876543210">
+                <i class="fa-solid fa-phone"></i>
+                Emergency: +91 98765 43210
+            </a>
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+
+
+
+<!--
+     HEADER -->
+
+<header class="header" id="header">
+
+    <div class="container nav-container">
+
+        <a href="#home" class="logo">
+
+            <span class="logo-icon">
+                <i class="fa-solid fa-heart-pulse"></i>
+            </span>
+
+            <span>
+                <strong>MediCare</strong>
+                <small>HOSPITAL</small>
+            </span>
+
+        </a>
+
+
+        <nav class="navbar" id="navbar">
+
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#departments" class="nav-link">Departments</a>
+            <a href="#doctors" class="nav-link">Doctors</a>
+            <a href="#services" class="nav-link">Services</a>
+            <a href="#packages" class="nav-link">Packages</a>
+            <a href="#contact" class="nav-link">Contact</a>
+
+            <button class="mobile-appointment"
+                    onclick="openAppointmentModal()">
+                Book Appointment
+            </button>
+
+        </nav>
+
+
+        <div class="header-actions">
+
+            <button class="theme-btn"
+                    onclick="toggleTheme()"
+                    aria-label="Toggle theme">
+
+                <i class="fa-solid fa-moon" id="themeIcon"></i>
+
+            </button>
+
+            <button class="header-appointment"
+                    onclick="openAppointmentModal()">
+
+                <i class="fa-solid fa-calendar-check"></i>
+                Book Appointment
+
+            </button>
+
+            <button class="menu-btn"
+                    onclick="toggleMenu()"
+                    aria-label="Menu">
+
+                <i class="fa-solid fa-bars"></i>
+
+            </button>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<!--
+     HERO-->
+
+<section class="hero" id="home">
+
+    <div class="container hero-grid">
+
+        <div class="hero-content">
+
+            <span class="section-tag">
+                <i class="fa-solid fa-shield-heart"></i>
+                Trusted Healthcare Since 2005
+            </span>
+
+            <h1>
+                Your Health Is Our
+                <span>First Priority</span>
+            </h1>
+
+            <p>
+                Providing advanced medical care with experienced doctors,
+                modern technology and compassionate patient care.
+            </p>
+
+            <div class="hero-buttons">
+
+                <button class="btn btn-primary"
+                        onclick="openAppointmentModal()">
+
+                    <i class="fa-solid fa-calendar-check"></i>
+                    Book Appointment
+
+                </button>
+
+                <a href="#departments" class="btn btn-outline">
+                    Explore Departments
+                </a>
+
+            </div>
+
+
+            <div class="hero-features">
+
+                <div>
+                    <i class="fa-solid fa-user-doctor"></i>
+                    <span>
+                        <strong>50+</strong>
+                        Expert Doctors
+                    </span>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-hospital"></i>
+                    <span>
+                        <strong>20+</strong>
+                        Departments
+                    </span>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-clock"></i>
+                    <span>
+                        <strong>24/7</strong>
+                        Emergency
+                    </span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-card-wrapper">
+
+            <div class="hero-image-card">
+
+                <img src="https://images.unsplash.com/photo-1586773860418-d37222d8fce3?auto=format&fit=crop&w=900&q=80"
+                     alt="Modern Hospital">
+
+                <div class="hero-floating-card">
+
+                    <div class="floating-icon">
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+
+                    <div>
+                        <strong>4.9/5</strong>
+                        <span>Patient Rating</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="experience-card">
+
+                <strong>20+</strong>
+                <span>Years of Healthcare Excellence</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     EMERGENCY STRIP
+===================================================== -->
+
+<section class="emergency-strip">
+
+    <div class="container emergency-inner">
+
+        <div class="emergency-icon">
+            <i class="fa-solid fa-truck-medical"></i>
+        </div>
+
+        <div>
+            <strong>24/7 Emergency & Ambulance</strong>
+            <span>Immediate medical assistance available</span>
+        </div>
+
+        <a href="tel:+919876543210" class="emergency-call">
+            <i class="fa-solid fa-phone"></i>
+            Call Emergency
+        </a>
+
+        <button class="emergency-whatsapp"
+                onclick="openWhatsAppGeneral()">
+
+            <i class="fa-brands fa-whatsapp"></i>
+            WhatsApp
+
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     ABOUT
+===================================================== -->
+
+<section class="section about" id="about">
+
+    <div class="container about-grid">
+
+        <div class="about-images">
+
+            <img class="about-main-img"
+                 src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=900&q=80"
+                 alt="Hospital">
+
+            <div class="about-experience">
+
+                <strong>20+</strong>
+                <span>Years of Excellence</span>
+
+            </div>
+
+        </div>
+
+
+        <div class="about-content">
+
+            <span class="section-tag">ABOUT MEDICARE</span>
+
+            <h2>
+                Quality Healthcare With
+                <span>Compassion</span>
+            </h2>
+
+            <p>
+                MediCare Hospital is a multi-speciality healthcare centre
+                dedicated to providing high-quality and affordable medical
+                services to patients.
+            </p>
+
+            <p>
+                Our experienced medical professionals use advanced technology
+                and patient-focused treatment to deliver better healthcare.
+            </p>
+
+
+            <div class="about-points">
+
+                <div>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <span>Experienced & Qualified Doctors</span>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <span>Advanced Medical Technology</span>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <span>24/7 Emergency Services</span>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <span>Affordable Healthcare Packages</span>
+                </div>
+
+            </div>
+
+
+            <button class="btn btn-primary"
+                    onclick="openAppointmentModal()">
+
+                Book Your Appointment
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     STATS
+===================================================== -->
+
+<section class="stats-section">
+
+    <div class="container stats-grid">
+
+        <div class="stat-card">
+            <i class="fa-solid fa-user-doctor"></i>
+            <strong data-count="50">0</strong>
+            <span>Expert Doctors</span>
+        </div>
+
+        <div class="stat-card">
+            <i class="fa-solid fa-bed"></i>
+            <strong data-count="300">0</strong>
+            <span>Hospital Beds</span>
+        </div>
+
+        <div class="stat-card">
+            <i class="fa-solid fa-users"></i>
+            <strong data-count="50000">0</strong>
+            <span>Happy Patients</span>
+        </div>
+
+        <div class="stat-card">
+            <i class="fa-solid fa-award"></i>
+            <strong data-count="25">0</strong>
+            <span>Awards</span>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     DEPARTMENTS
+===================================================== -->
+
+<section class="section" id="departments">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="section-tag">OUR DEPARTMENTS</span>
+
+            <h2>
+                Specialized Medical
+                <span>Departments</span>
+            </h2>
+
+            <p>
+                Complete healthcare services under one roof.
+            </p>
+
+        </div>
+
+
+        <div class="filter-box">
+
+            <input type="text"
+                   id="departmentSearch"
+                   placeholder="Search department..."
+                   oninput="filterDepartments()">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+        </div>
+
+
+        <div class="department-grid" id="departmentGrid">
+
+            <div class="department-card"
+                 data-name="cardiology">
+
+                <div class="department-icon">
+                    <i class="fa-solid fa-heart-pulse"></i>
+                </div>
+
+                <h3>Cardiology</h3>
+
+                <p>
+                    Complete heart and cardiovascular care.
+                </p>
+
+                <button onclick="openDepartment('Cardiology')">
+                    View Department
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+
+            </div>
+
+
+            <div class="department-card"
+                 data-name="neurology">
+
+                <div class="department-icon">
+                    <i class="fa-solid fa-brain"></i>
+                </div>
+
+                <h3>Neurology</h3>
+
+                <p>
+                    Diagnosis and treatment of neurological disorders.
+                </p>
+
+                <button onclick="openDepartment('Neurology')">
+                    View Department
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+
+            </div>
+
+
+            <div class="department-card"
+                 data-name="orthopedics">
+
+                <div class="department-icon">
+                    <i class="fa-solid fa-bone"></i>
+                </div>
+
+                <h3>Orthopedics</h3>
+
+                <p>
+                    Bone, joint and muscle treatment.
+                </p>
+
+                <button onclick="openDepartment('Orthopedics')">
+                    View Department
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+
+            </div>
+
+
+            <div class="department-card"
+                 data-name="gynecology">
+
+                <div class="department-icon">
+                    <i class="fa-solid fa-person-pregnant"></i>
+                </div>
+
+                <h3>Gynecology</h3>
+
+                <p>
+                    Women's health and maternity services.
+                </p>
+
+                <button onclick="openDepartment('Gynecology')">
+                    View Department
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+
+            </div>
+
+
+            <div class="department-card"
+                 data-name="pediatrics">
+
+                <div class="department-icon">
+                    <i class="fa-solid fa-baby"></i>
+                </div>
+
+                <h3>Pediatrics</h3>
+
+                <p>
+                    Specialized healthcare for children.
+                </p>
+
+                <button onclick="openDepartment('Pediatrics')">
+                    View Department
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+
+            </div>
+
+
+            <div class="department-card"
+                 data-name="dermatology">
+
+                <div class="department-icon">
+                    <i class="fa-solid fa-hand-dots"></i>
+                </div>
+
+                <h3>Dermatology</h3>
+
+                <p>
+                    Skin, hair and cosmetic dermatology care.
+                </p>
+
+                <button onclick="openDepartment('Dermatology')">
+                    View Department
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+
+            </div>
+
+
+            <div class="department-card"
+                 data-name="dental">
+
+                <div class="department-icon">
+                    <i class="fa-solid fa-tooth"></i>
+                </div>
+
+                <h3>Dental</h3>
+
+                <p>
+                    Complete dental and oral healthcare.
+                </p>
+
+                <button onclick="openDepartment('Dental')">
+                    View Department
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+
+            </div>
+
+
+            <div class="department-card"
+                 data-name="general medicine">
+
+                <div class="department-icon">
+                    <i class="fa-solid fa-stethoscope"></i>
+                </div>
+
+                <h3>General Medicine</h3>
+
+                <p>
+                    Primary and comprehensive medical care.
+                </p>
+
+                <button onclick="openDepartment('General Medicine')">
+                    View Department
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     SERVICES
+===================================================== -->
+
+<section class="section light-section" id="services">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="section-tag">OUR SERVICES</span>
+
+            <h2>
+                Healthcare Services
+                <span>For You</span>
+            </h2>
+
+            <p>
+                Patient-friendly services designed around your healthcare needs.
+            </p>
+
+        </div>
+
+
+        <div class="services-grid">
+
+            <div class="service-card">
+                <i class="fa-solid fa-truck-medical"></i>
+                <h3>Emergency Care</h3>
+                <p>24/7 emergency medical assistance.</p>
+            </div>
+
+            <div class="service-card">
+                <i class="fa-solid fa-flask"></i>
+                <h3>Laboratory</h3>
+                <p>Modern diagnostic and pathology services.</p>
+            </div>
+
+            <div class="service-card">
+                <i class="fa-solid fa-x-ray"></i>
+                <h3>Diagnostics</h3>
+                <p>Advanced imaging and diagnostic facilities.</p>
+            </div>
+
+            <div class="service-card">
+                <i class="fa-solid fa-pills"></i>
+                <h3>Pharmacy</h3>
+                <p>Medicines and healthcare essentials.</p>
+            </div>
+
+            <div class="service-card">
+                <i class="fa-solid fa-ambulance"></i>
+                <h3>Ambulance</h3>
+                <p>24/7 ambulance support.</p>
+            </div>
+
+            <div class="service-card">
+                <i class="fa-solid fa-file-medical"></i>
+                <h3>Health Reports</h3>
+                <p>Easy access to your health report area.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     DOCTORS
+===================================================== -->
+
+<section class="section" id="doctors">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="section-tag">OUR DOCTORS</span>
+
+            <h2>
+                Meet Our
+                <span>Specialists</span>
+            </h2>
+
+        </div>
+
+
+        <div class="doctor-filters">
+
+            <input type="text"
+                   id="doctorSearch"
+                   placeholder="Search doctor..."
+                   oninput="filterDoctors()">
+
+            <select id="doctorDepartment"
+                    onchange="filterDoctors()">
+
+                <option value="all">All Departments</option>
+                <option value="Cardiology">Cardiology</option>
+                <option value="Neurology">Neurology</option>
+                <option value="Orthopedics">Orthopedics</option>
+                <option value="Gynecology">Gynecology</option>
+                <option value="Pediatrics">Pediatrics</option>
+                <option value="Dermatology">Dermatology</option>
+
+            </select>
+
+        </div>
+
+
+        <div class="doctor-grid" id="doctorGrid">
+
+
+            <div class="doctor-card"
+                 data-name="dr rajesh sharma"
+                 data-department="Cardiology">
+
+                <div class="doctor-image">
+
+                    <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=600&q=80"
+                         alt="Dr Rajesh Sharma">
+
+                    <span>Available</span>
+
+                </div>
+
+                <div class="doctor-info">
+
+                    <h3>Dr. Rajesh Sharma</h3>
+                    <p>Senior Cardiologist</p>
+
+                    <div class="doctor-rating">
+                        ★★★★★
+                    </div>
+
+                    <button onclick="openDoctor('Dr. Rajesh Sharma','Senior Cardiologist','Cardiology','15+ Years Experience')">
+                        View Profile
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="doctor-card"
+                 data-name="dr priya mehta"
+                 data-department="Neurology">
+
+                <div class="doctor-image">
+
+                    <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=600&q=80"
+                         alt="Dr Priya Mehta">
+
+                    <span>Available</span>
+
+                </div>
+
+                <div class="doctor-info">
+
+                    <h3>Dr. Priya Mehta</h3>
+                    <p>Neurologist</p>
+
+                    <div class="doctor-rating">
+                        ★★★★★
+                    </div>
+
+                    <button onclick="openDoctor('Dr. Priya Mehta','Neurologist','Neurology','12+ Years Experience')">
+                        View Profile
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="doctor-card"
+                 data-name="dr amit verma"
+                 data-department="Orthopedics">
+
+                <div class="doctor-image">
+
+                    <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=600&q=80"
+                         alt="Dr Amit Verma">
+
+                    <span>Available</span>
+
+                </div>
+
+                <div class="doctor-info">
+
+                    <h3>Dr. Amit Verma</h3>
+                    <p>Orthopedic Surgeon</p>
+
+                    <div class="doctor-rating">
+                        ★★★★★
+                    </div>
+
+                    <button onclick="openDoctor('Dr. Amit Verma','Orthopedic Surgeon','Orthopedics','14+ Years Experience')">
+                        View Profile
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="doctor-card"
+                 data-name="dr neha kapoor"
+                 data-department="Gynecology">
+
+                <div class="doctor-image">
+
+                    <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?auto=format&fit=crop&w=600&q=80"
+                         alt="Dr Neha Kapoor">
+
+                    <span>Available</span>
+
+                </div>
+
+                <div class="doctor-info">
+
+                    <h3>Dr. Neha Kapoor</h3>
+                    <p>Gynecologist</p>
+
+                    <div class="doctor-rating">
+                        ★★★★★
+                    </div>
+
+                    <button onclick="openDoctor('Dr. Neha Kapoor','Gynecologist','Gynecology','10+ Years Experience')">
+                        View Profile
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     FACILITIES
+===================================================== -->
+
+<section class="section light-section">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="section-tag">HOSPITAL FACILITIES</span>
+
+            <h2>
+                Modern Facilities For
+                <span>Better Care</span>
+            </h2>
+
+        </div>
+
+
+        <div class="facility-grid">
+
+            <div class="facility-card">
+                <i class="fa-solid fa-bed"></i>
+                <h3>300+ Beds</h3>
+                <p>Comfortable patient rooms.</p>
+            </div>
+
+            <div class="facility-card">
+                <i class="fa-solid fa-building"></i>
+                <h3>ICU & NICU</h3>
+                <p>Advanced critical care units.</p>
+            </div>
+
+            <div class="facility-card">
+                <i class="fa-solid fa-microscope"></i>
+                <h3>Modern Labs</h3>
+                <p>Advanced diagnostic facilities.</p>
+            </div>
+
+            <div class="facility-card">
+                <i class="fa-solid fa-square-parking"></i>
+                <h3>Parking</h3>
+                <p>Dedicated hospital parking.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     BED AVAILABILITY
+===================================================== -->
+
+<section class="section">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="section-tag">BED AVAILABILITY</span>
+
+            <h2>
+                Current Bed
+                <span>Availability</span>
+            </h2>
+
+            <p>Demo availability status. Please call hospital reception for confirmation.</p>
+
+        </div>
+
+
+        <div class="bed-grid">
+
+            <div class="bed-card">
+                <i class="fa-solid fa-bed"></i>
+                <h3>General Ward</h3>
+                <strong>42 Beds</strong>
+                <span class="available">Available</span>
+            </div>
+
+            <div class="bed-card">
+                <i class="fa-solid fa-bed"></i>
+                <h3>Private Room</h3>
+                <strong>18 Rooms</strong>
+                <span class="available">Available</span>
+            </div>
+
+            <div class="bed-card">
+                <i class="fa-solid fa-heart-pulse"></i>
+                <h3>ICU</h3>
+                <strong>6 Beds</strong>
+                <span class="limited">Limited</span>
+            </div>
+
+            <div class="bed-card">
+                <i class="fa-solid fa-baby"></i>
+                <h3>NICU</h3>
+                <strong>4 Beds</strong>
+                <span class="limited">Limited</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     ROOMS
+===================================================== -->
+
+<section class="section light-section">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="section-tag">ROOM TYPES</span>
+
+            <h2>
+                Comfortable
+                <span>Rooms</span>
+            </h2>
+
+        </div>
+
+
+        <div class="room-grid">
+
+            <div class="room-card">
+
+                <div class="room-image">
+                    <img src="https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&w=800&q=80"
+                         alt="General Ward">
+                </div>
+
+                <div class="room-content">
+                    <h3>General Ward</h3>
+                    <p>Comfortable shared patient room.</p>
+                    <strong>₹2,500 / Day</strong>
+                    <button onclick="bookRoom('General Ward','₹2,500 / Day')">
+                        Enquire Now
+                    </button>
+                </div>
+
+            </div>
+
+
+            <div class="room-card">
+
+                <div class="room-image">
+                    <img src="https://images.unsplash.com/photo-1519494080410-f9aa76cb4283?auto=format&fit=crop&w=800&q=80"
+                         alt="Private Room">
+                </div>
+
+                <div class="room-content">
+                    <h3>Private Room</h3>
+                    <p>Private room with modern facilities.</p>
+                    <strong>₹5,000 / Day</strong>
+                    <button onclick="bookRoom('Private Room','₹5,000 / Day')">
+                        Enquire Now
+                    </button>
+                </div>
+
+            </div>
+
+
+            <div class="room-card">
+
+                <div class="room-image">
+                    <img src="https://images.unsplash.com/photo-1512678080530-7760d81f95da?auto=format&fit=crop&w=800&q=80"
+                         alt="Deluxe Room">
+                </div>
+
+                <div class="room-content">
+                    <h3>Deluxe Room</h3>
+                    <p>Premium room with extra facilities.</p>
+                    <strong>₹8,000 / Day</strong>
+                    <button onclick="bookRoom('Deluxe Room','₹8,000 / Day')">
+                        Enquire Now
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     HEALTH PACKAGES
+===================================================== -->
+
+<section class="section" id="packages">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="section-tag">HEALTH PACKAGES</span>
+
+            <h2>
+                Preventive Health
+                <span>Checkups</span>
+            </h2>
+
+        </div>
+
+
+        <div class="package-grid">
+
+            <div class="package-card">
+
+                <span class="package-label">BASIC</span>
+
+                <h3>Basic Health Checkup</h3>
+
+                <div class="package-price">
+                    ₹1,499
+                </div>
+
+                <ul>
+                    <li>Blood Test</li>
+                    <li>Blood Pressure</li>
+                    <li>Blood Sugar</li>
+                    <li>Doctor Consultation</li>
+                </ul>
+
+                <button onclick="bookPackage('Basic Health Checkup','₹1,499')">
+                    Book Package
+                </button>
+
+            </div>
+
+
+            <div class="package-card featured">
+
+                <span class="package-label">POPULAR</span>
+
+                <h3>Complete Health Checkup</h3>
+
+                <div class="package-price">
+                    ₹2,999
+                </div>
+
+                <ul>
+                    <li>Complete Blood Test</li>
+                    <li>Liver & Kidney Test</li>
+                    <li>ECG</li>
+                    <li>Doctor Consultation</li>
+                    <li>Chest X-Ray</li>
+                </ul>
+
+                <button onclick="bookPackage('Complete Health Checkup','₹2,999')">
+                    Book Package
+                </button>
+
+            </div>
+
+
+            <div class="package-card">
+
+                <span class="package-label">PREMIUM</span>
+
+                <h3>Executive Health Checkup</h3>
+
+                <div class="package-price">
+                    ₹5,999
+                </div>
+
+                <ul>
+                    <li>Full Body Blood Test</li>
+                    <li>ECG</li>
+                    <li>Ultrasound</li>
+                    <li>Chest X-Ray</li>
+                    <li>Specialist Consultation</li>
+                </ul>
+
+                <button onclick="bookPackage('Executive Health Checkup','₹5,999')">
+                    Book Package
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     INSURANCE
+===================================================== -->
+
+<section class="section light-section">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="section-tag">INSURANCE & TPA</span>
+
+            <h2>
+                Insurance
+                <span>Support</span>
+            </h2>
+
+        </div>
+
+
+        <div class="insurance-grid">
+
+            <div class="insurance-card">
+                <i class="fa-solid fa-shield-halved"></i>
+                <h3>Cashless Insurance</h3>
+                <p>Cashless treatment support subject to policy terms.</p>
+            </div>
+
+            <div class="insurance-card">
+                <i class="fa-solid fa-file-invoice"></i>
+                <h3>TPA Assistance</h3>
+                <p>Support with documentation and claims process.</p>
+            </div>
+
+            <div class="insurance-card">
+                <i class="fa-solid fa-headset"></i>
+                <h3>Insurance Desk</h3>
+                <p>Dedicated help for insurance-related enquiries.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     LAB TEST
+===================================================== -->
+
+<section class="section lab-section">
+
+    <div class="container lab-grid">
+
+        <div>
+
+            <span class="section-tag">LAB TEST BOOKING</span>
+
+            <h2>
+                Book Your
+                <span>Lab Test</span>
+            </h2>
+
+            <p>
+                Select your required test and send the booking request
+                directly to our WhatsApp.
+            </p>
+
+            <button class="btn btn-primary"
+                    onclick="openLabModal()">
+
+                <i class="fa-solid fa-flask"></i>
+                Book Lab Test
+
+            </button>
+
+        </div>
+
+
+        <div class="lab-icon-big">
+            <i class="fa-solid fa-vials"></i>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     AMBULANCE
+===================================================== -->
+
+<section class="ambulance-section">
+
+    <div class="container ambulance-inner">
+
+        <div>
+
+            <span class="section-tag">24/7 AMBULANCE</span>
+
+            <h2>
+                Need An Ambulance?
+            </h2>
+
+            <p>
+                Emergency ambulance service available 24 hours.
+            </p>
+
+        </div>
+
+        <div class="ambulance-buttons">
+
+            <a href="tel:+919876543210" class="btn btn-white">
+                <i class="fa-solid fa-phone"></i>
+                Call Ambulance
+            </a>
+
+            <button class="btn btn-whatsapp"
+                    onclick="openAmbulanceWhatsApp()">
+
+                <i class="fa-brands fa-whatsapp"></i>
+                WhatsApp Booking
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     GALLERY
+===================================================== -->
+
+<section class="section">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="section-tag">HOSPITAL GALLERY</span>
+
+            <h2>
+                Our Hospital
+                <span>Gallery</span>
+            </h2>
+
+        </div>
+
+
+        <div class="gallery-grid">
+
+            <div onclick="openGallery(this)">
+                <img src="https://images.unsplash.com/photo-1586773860418-d37222d8fce3?auto=format&fit=crop&w=900&q=80"
+                     alt="Hospital">
+            </div>
+
+            <div onclick="openGallery(this)">
+                <img src="https://images.unsplash.com/photo-1519494080410-f9aa76cb4283?auto=format&fit=crop&w=900&q=80"
+                     alt="Hospital Room">
+            </div>
+
+            <div onclick="openGallery(this)">
+                <img src="https://images.unsplash.com/photo-1551076805-e1869033e561?auto=format&fit=crop&w=900&q=80"
+                     alt="Medical Team">
+            </div>
+
+            <div onclick="openGallery(this)">
+                <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=900&q=80"
+                     alt="Doctor">
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     TESTIMONIALS
+===================================================== -->
+
+<section class="section light-section">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="section-tag">PATIENT REVIEWS</span>
+
+            <h2>
+                What Our Patients
+                <span>Say</span>
+            </h2>
+
+        </div>
+
+
+        <div class="review-grid">
+
+            <div class="review-card">
+
+                <div class="review-stars">
+                    ★★★★★
+                </div>
+
+                <p>
+                    "The doctors and staff were very supportive.
+                    The hospital environment was clean and comfortable."
+                </p>
+
+                <strong>Rahul Kumar</strong>
+                <span>Patient</span>
+
+            </div>
+
+
+            <div class="review-card">
+
+                <div class="review-stars">
+                    ★★★★★
+                </div>
+
+                <p>
+                    "Very professional doctors and quick emergency service."
+                </p>
+
+                <strong>Priya Singh</strong>
+                <span>Patient</span>
+
+            </div>
+
+
+            <div class="review-card">
+
+                <div class="review-stars">
+                    ★★★★★
+                </div>
+
+                <p>
+                    "Good facilities and helpful medical team."
+                </p>
+
+                <strong>Amit Gupta</strong>
+                <span>Patient</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     FAQ
+===================================================== -->
+
+<section class="section">
+
+    <div class="container faq-container">
+
+        <div class="section-heading">
+
+            <span class="section-tag">FAQ</span>
+
+            <h2>
+                Frequently Asked
+                <span>Questions</span>
+            </h2>
+
+        </div>
+
+
+        <div class="faq-list">
+
+            <div class="faq-item">
+
+                <button onclick="toggleFAQ(this)">
+                    How can I book an appointment?
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+
+                <div class="faq-answer">
+                    You can click on Book Appointment, fill the form
+                    and send the appointment details to our WhatsApp.
+                </div>
+
+            </div>
+
+
+            <div class="faq-item">
+
+                <button onclick="toggleFAQ(this)">
+                    Is emergency service available 24/7?
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+
+                <div class="faq-answer">
+                    Yes, the emergency department is available 24/7.
+                </div>
+
+            </div>
+
+
+            <div class="faq-item">
+
+                <button onclick="toggleFAQ(this)">
+                    Do you provide ambulance service?
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+
+                <div class="faq-answer">
+                    Yes. Ambulance enquiry can be made through phone
+                    or WhatsApp.
+                </div>
+
+            </div>
+
+
+            <div class="faq-item">
+
+                <button onclick="toggleFAQ(this)">
+                    Do you accept insurance?
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+
+                <div class="faq-answer">
+                    Insurance and cashless treatment are subject to
+                    applicable policy and hospital/TPA approval.
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     CONTACT
+===================================================== -->
+
+<section class="section contact-section" id="contact">
+
+    <div class="container contact-grid">
+
+        <div class="contact-info">
+
+            <span class="section-tag">CONTACT US</span>
+
+            <h2>
+                We're Here To
+                <span>Help You</span>
+            </h2>
+
+            <p>
+                Have a question or need assistance?
+                Send us a WhatsApp message.
+            </p>
+
+
+            <div class="contact-item">
+
+                <i class="fa-solid fa-location-dot"></i>
+
+                <div>
+                    <strong>Hospital Address</strong>
+                    <span>123 Healthcare Road, New Delhi, India</span>
+                </div>
+
+            </div>
+
+
+            <div class="contact-item">
+
+                <i class="fa-solid fa-phone"></i>
+
+                <div>
+                    <strong>Phone</strong>
+                    <a href="tel:+919876543210">
+                        +91 98765 43210
+                    </a>
+                </div>
+
+            </div>
+
+
+            <div class="contact-item">
+
+                <i class="fa-solid fa-envelope"></i>
+
+                <div>
+                    <strong>Email</strong>
+                    <span>care@medicarehospital.com</span>
+                </div>
+
+            </div>
+
+
+            <div class="contact-item">
+
+                <i class="fa-solid fa-clock"></i>
+
+                <div>
+                    <strong>Working Hours</strong>
+                    <span>Monday - Sunday | 24x7 Emergency</span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- CONTACT FORM -->
+
+        <div class="contact-form-card">
+
+            <h3>Send Us A Message</h3>
+
+            <p>
+                Your message will open directly in WhatsApp.
+            </p>
+
+
+            <form id="contactForm"
+                  onsubmit="sendMessageToWhatsApp(event)">
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label>Your Name *</label>
+
+                        <input type="text"
+                               id="contactName"
+                               placeholder="Enter your name"
+                               required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>Phone *</label>
+
+                        <input type="tel"
+                               id="contactPhone"
+                               placeholder="10 digit mobile number"
+                               maxlength="10"
+                               required>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>Email</label>
+
+                    <input type="email"
+                           id="contactEmail"
+                           placeholder="Enter your email">
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>Subject</label>
+
+                    <input type="text"
+                           id="contactSubject"
+                           placeholder="Enter subject">
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>Your Message *</label>
+
+                    <textarea id="contactMessage"
+                              rows="5"
+                              placeholder="Write your message..."
+                              required></textarea>
+
+                </div>
+
+
+                <button type="submit"
+                        class="btn btn-primary full-btn">
+
+                    <i class="fa-brands fa-whatsapp"></i>
+                    Send Message on WhatsApp
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer class="footer">
+
+    <div class="container footer-grid">
+
+        <div class="footer-about">
+
+            <a href="#home" class="logo footer-logo">
+
+                <span class="logo-icon">
+                    <i class="fa-solid fa-heart-pulse"></i>
+                </span>
+
+                <span>
+                    <strong>MediCare</strong>
+                    <small>HOSPITAL</small>
+                </span>
+
+            </a>
+
+            <p>
+                Quality healthcare with compassion,
+                technology and experienced professionals.
+            </p>
+
+            <div class="social-links">
+
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-col">
+
+            <h3>Quick Links</h3>
+
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#doctors">Doctors</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+
+        </div>
+
+
+        <div class="footer-col">
+
+            <h3>Services</h3>
+
+            <a href="#services">Emergency Care</a>
+            <a href="#services">Laboratory</a>
+            <a href="#services">Diagnostics</a>
+            <a href="#services">Pharmacy</a>
+            <a href="#packages">Health Packages</a>
+
+        </div>
+
+
+        <div class="footer-col">
+
+            <h3>Contact</h3>
+
+            <a href="tel:+919876543210">
+                +91 98765 43210
+            </a>
+
+            <a href="mailto:care@medicarehospital.com">
+                care@medicarehospital.com
+            </a>
+
+            <span>New Delhi, India</span>
+
+            <button onclick="openAppointmentModal()"
+                    class="footer-btn">
+
+                Book Appointment
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <div class="container">
+
+            <p>
+                © 2026 MediCare Hospital. All Rights Reserved.
+            </p>
+
+            <p>
+                <a href="#">Privacy Policy</a>
+                |
+                <a href="#">Terms & Conditions</a>
+                |
+                <a href="#">Disclaimer</a>
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- =====================================================
+     FLOATING WHATSAPP
+===================================================== -->
+
+<a href="javascript:void(0)"
+   onclick="openWhatsAppGeneral()"
+   class="floating-whatsapp">
+
+    <i class="fa-brands fa-whatsapp"></i>
+
+</a>
+
+
+<!-- =====================================================
+     BACK TO TOP
+===================================================== -->
+
+<button class="back-top"
+        id="backTop"
+        onclick="window.scrollTo({top:0,behavior:'smooth'})">
+
+    <i class="fa-solid fa-arrow-up"></i>
+
+</button>
+
+
+<!-- =====================================================
+     APPOINTMENT MODAL
+===================================================== -->
+
+<div class="modal" id="appointmentModal">
+
+    <div class="modal-overlay"
+         onclick="closeModal('appointmentModal')"></div>
+
+    <div class="modal-box">
+
+        <button class="modal-close"
+                onclick="closeModal('appointmentModal')">
+
+            <i class="fa-solid fa-xmark"></i>
+
+        </button>
+
+
+        <div class="modal-header">
+
+            <div class="modal-icon">
+                <i class="fa-solid fa-calendar-check"></i>
+            </div>
+
+            <div>
+                <h2>Book Appointment</h2>
+                <p>Send your appointment request on WhatsApp.</p>
+            </div>
+
+        </div>
+
+
+        <form id="appointmentForm"
+              onsubmit="sendAppointmentToWhatsApp(event)">
+
+            <div class="form-row">
+
+                <div class="form-group">
+
+                    <label>Patient Name *</label>
+
+                    <input type="text"
+                           id="patientName"
+                           placeholder="Patient name"
+                           required>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>Phone Number *</label>
+
+                    <input type="tel"
+                           id="patientPhone"
+                           placeholder="10 digit mobile"
+                           maxlength="10"
+                           required>
+
+                </div>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>Email</label>
+
+                <input type="email"
+                       id="patientEmail"
+                       placeholder="Email address">
+
+            </div>
+
+
+            <div class="form-row">
+
+                <div class="form-group">
+
+                    <label>Department *</label>
+
+                    <select id="appointmentDepartment"
+                            required
+                            onchange="updateDoctors()">
+
+                        <option value="">Select Department</option>
+                        <option>Cardiology</option>
+                        <option>Neurology</option>
+                        <option>Orthopedics</option>
+                        <option>Gynecology</option>
+                        <option>Pediatrics</option>
+                        <option>Dermatology</option>
+                        <option>Dental</option>
+                        <option>General Medicine</option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>Doctor *</label>
+
+                    <select id="appointmentDoctor"
+                            required>
+
+                        <option value="">Select Doctor</option>
+                        <option>Dr. Rajesh Sharma</option>
+                        <option>Dr. Priya Mehta</option>
+                        <option>Dr. Amit Verma</option>
+                        <option>Dr. Neha Kapoor</option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+
+            <div class="form-row">
+
+                <div class="form-group">
+
+                    <label>Date *</label>
+
+                    <input type="date"
+                           id="appointmentDate"
+                           required>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>Time *</label>
+
+                    <select id="appointmentTime"
+                            required>
+
+                        <option value="">Select Time</option>
+                        <option>09:00 AM</option>
+                        <option>10:00 AM</option>
+                        <option>11:00 AM</option>
+                        <option>12:00 PM</option>
+                        <option>02:00 PM</option>
+                        <option>03:00 PM</option>
+                        <option>04:00 PM</option>
+                        <option>05:00 PM</option>
+                        <option>06:00 PM</option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>Patient Message</label>
+
+                <textarea id="appointmentMessage"
+                          rows="4"
+                          placeholder="Describe your problem or reason for appointment..."></textarea>
+
+            </div>
+
+
+            <button type="submit"
+                    class="btn btn-whatsapp full-btn">
+
+                <i class="fa-brands fa-whatsapp"></i>
+                Send Appointment on WhatsApp
+
+            </button>
+
+            <small class="form-note">
+                WhatsApp will open with your appointment details.
+                You can review and press Send.
+            </small>
+
+        </form>
+
+    </div>
+
+</div>
+
+
+<!-- =====================================================
+     DOCTOR MODAL
+===================================================== -->
+
+<div class="modal" id="doctorModal">
+
+    <div class="modal-overlay"
+         onclick="closeModal('doctorModal')"></div>
+
+    <div class="modal-box doctor-modal-box">
+
+        <button class="modal-close"
+                onclick="closeModal('doctorModal')">
+
+            <i class="fa-solid fa-xmark"></i>
+
+        </button>
+
+        <div class="doctor-modal-icon">
+            <i class="fa-solid fa-user-doctor"></i>
+        </div>
+
+        <h2 id="doctorModalName">
+            Doctor Name
+        </h2>
+
+        <p id="doctorModalSpeciality"></p>
+
+        <div class="doctor-modal-details">
+
+            <div>
+                <i class="fa-solid fa-hospital"></i>
+                <span id="doctorModalDepartment"></span>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-award"></i>
+                <span id="doctorModalExperience"></span>
+            </div>
+
+        </div>
+
+        <button class="btn btn-primary full-btn"
+                onclick="closeModal('doctorModal'); openAppointmentModal();">
+
+            Book Appointment
+
+        </button>
+
+    </div>
+
+</div>
+
+
+<!-- =====================================================
+     LAB MODAL
+===================================================== -->
+
+<div class="modal" id="labModal">
+
+    <div class="modal-overlay"
+         onclick="closeModal('labModal')"></div>
+
+    <div class="modal-box">
+
+        <button class="modal-close"
+                onclick="closeModal('labModal')">
+
+            <i class="fa-solid fa-xmark"></i>
+
+        </button>
+
+        <div class="modal-header">
+
+            <div class="modal-icon">
+                <i class="fa-solid fa-flask"></i>
+            </div>
+
+            <div>
+                <h2>Book Lab Test</h2>
+                <p>Send test booking request on WhatsApp.</p>
+            </div>
+
+        </div>
+
+
+        <form onsubmit="sendLabTest(event)">
+
+            <div class="form-group">
+
+                <label>Patient Name *</label>
+
+                <input type="text"
+                       id="labName"
+                       required
+                       placeholder="Enter patient name">
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>Phone *</label>
+
+                <input type="tel"
+                       id="labPhone"
+                       maxlength="10"
+                       required
+                       placeholder="10 digit mobile">
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>Select Test *</label>
+
+                <select id="labTest" required>
+
+                    <option value="">Select Test</option>
+                    <option>Complete Blood Count (CBC)</option>
+                    <option>Blood Sugar Test</option>
+                    <option>Liver Function Test</option>
+                    <option>Kidney Function Test</option>
+                    <option>Lipid Profile</option>
+                    <option>Thyroid Profile</option>
+                    <option>Vitamin D Test</option>
+                    <option>Urine Test</option>
+
+                </select>
+
+            </div>
+
+
+            <button type="submit"
+                    class="btn btn-whatsapp full-btn">
+
+                <i class="fa-brands fa-whatsapp"></i>
+                Book Test on WhatsApp
+
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+
+<!-- =====================================================
+     GALLERY MODAL
+===================================================== -->
+
+<div class="gallery-modal"
+     id="galleryModal"
+     onclick="closeGallery()">
+
+    <button>
+        <i class="fa-solid fa-xmark"></i>
+    </button>
+
+    <img id="galleryModalImage"
+         src=""
+         alt="Gallery">
+
+</div>
+
+
+<!-- =====================================================
+     TOAST
+===================================================== -->
+
+<div class="toast"
+     id="toast">
+
+    <i class="fa-solid fa-circle-check"></i>
+
+    <span id="toastMessage">
+        Success
+    </span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ==============================
+     WELCOME OFFER POPUP
+================================= -->
+<div class="offer-popup-overlay" id="offerPopup">
+
+    <div class="offer-popup">
+
+        <!-- Close Button -->
+        <button class="popup-close" id="closeOfferPopup" aria-label="Close">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <div class="popup-icon">
+            <i class="fa-solid fa-heart-pulse"></i>
+        </div>
+
+        <span class="popup-small-title">
+            🎉 SPECIAL HEALTH OFFER
+        </span>
+
+        <h2>
+            Welcome to
+            <span>MediCare Hospital</span>
+        </h2>
+
+        <p>
+            Your health is our priority. Book your appointment today
+            and get <strong>20% OFF</strong> on selected health
+            checkup packages.
+        </p>
+
+        <div class="popup-offer">
+            <strong>20% OFF</strong>
+            <span>Health Checkup Packages</span>
+        </div>
+
+        <div class="popup-buttons">
+
+            <button
+                class="popup-btn primary"
+                onclick="openAppointmentFromPopup()"
+            >
+                <i class="fa-solid fa-calendar-check"></i>
+                Book Appointment
+            </button>
+
+            <button
+                class="popup-btn whatsapp"
+                onclick="popupWhatsApp()"
+            >
+                <i class="fa-brands fa-whatsapp"></i>
+                WhatsApp Us
+            </button>
+
+        </div>
+
+        <small class="popup-note">
+            *Offer is for selected health packages.
+        </small>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
